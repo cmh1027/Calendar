@@ -12,7 +12,7 @@ var calendar = require('./routes/calendar');
 var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-require('./socketManage')(io);
+require('./service/socketManage')(io);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

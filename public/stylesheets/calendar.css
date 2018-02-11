@@ -1,0 +1,118 @@
+#content{
+    margin-left:50px;
+    margin-top:50px;
+    border: 1px solid black;
+    width:600px;
+    position: relative;
+}
+
+#title{
+    margin:auto;
+    margin-top:10px;
+    width:90%;
+    border: 1px solid black;
+    text-align: center;
+    font-size:18px;
+    position: relative;
+    height:40px;
+}
+
+#left{
+    position: absolute;
+    left:0px;
+    top:0px;
+    margin:5px;
+    height:30px;
+}
+#right{
+    position: absolute;
+    margin:5px;
+    right:0px;
+    top:0px;
+    height:30px;
+}
+
+#month{
+    margin:auto;
+    width:70%;
+    padding-top:6px;
+}
+
+#calendar{
+    padding:30px;
+    padding-left:45px;
+    margin:auto;
+    width:90%;
+    overflow:hidden;
+}
+.block{
+    border: 1px solid black;
+    float:left;
+    width:70px;
+    height:70px;
+    margin:0px;
+    font-size:14px;
+}
+
+.block:hover{
+    cursor:pointer;
+    background-color:rgb(230, 225, 225);
+}
+
+
+.menu{
+    position: absolute;
+    z-index: 10;
+}
+
+.menulist{
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px;
+}
+
+.menulist:hover {background-color: #aca4a4;}
+
+.dayblock{
+    border: 1px solid black;
+    float:left;
+    width:70px;
+    height:25px;
+    margin:0px;
+    text-align: center;
+}
+
+.saturday{
+    color: blue;
+}
+
+.sunday{
+    color: red;
+}
+
+#schedule{
+    background-color: rgb(228, 228, 144);
+    min-width: 300px;
+    min-height: 200px;
+    position: absolute;
+    left: 640px;
+    top: 0px;
+    padding: 10px;
+}
+
+#schedule li{
+    font-size: 16px;
+    position: relative;
+}
+
+#schedule li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.block_schedule{
+    font-size:8px;
+    color:black;
+}

@@ -1,0 +1,23 @@
+extends layout
+block css
+    link(rel='stylesheet', href='/stylesheets/calendar.css')
+block script
+    script(type='text/javascript', src='./javascripts/calendar.js')
+block content
+    div#content
+        div#title
+            div#left
+                button <<
+            div#month
+            div#right
+                button >>
+        div#calendar
+            div.dayblock.sunday Sun
+            div.dayblock Mon
+            div.dayblock Tue
+            div.dayblock Thu
+            div.dayblock Wed
+            div.dayblock Fri
+            div.dayblock.saturday Sat
+        div#schedule
+            ul#schedule_list

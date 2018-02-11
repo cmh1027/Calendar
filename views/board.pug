@@ -1,0 +1,23 @@
+extends layout
+block css
+    link(rel='stylesheet', href='/stylesheets/board.css')
+block script
+    script(type='text/javascript', src='./javascripts/board.js')
+    script(type='text/javascript', src="https://cdn.socket.io/socket.io-1.4.5.js")
+    script(type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=11760fba4c725cf514fd1b749e85afac")
+block content
+    canvas#cv
+    div#map(style="width:500px;height:400px;")
+    div#menu
+        div.menus
+            button#clear clear
+        div.menus
+            |Color
+            select#pen_color
+        div.menus
+            |Width 
+            select#pen_width
+        fieldset#pen_shape
+            legend Shape
+        div.menus
+            button#map_toggle Show map

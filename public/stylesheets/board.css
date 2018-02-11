@@ -1,0 +1,38 @@
+body{
+  margin:0px;
+  user-select: none;
+}
+
+#cv{
+  background-image: url('../images/blackboard.jpg');
+  float:left;
+}
+
+#map{
+  top:100px;
+  left:100px;
+  position: absolute;
+}
+
+#menu{
+  float:left;
+}
+
+#menu button{
+  width:100px;
+  height:50px;
+}
+
+#menu .menus{
+  margin: 7px;
+}
+
+#pen_shape{
+  position:absolute;
+  width:70px;
+  height:50px;
+  top:10px;
+  left:730px;
+  color:white;
+}
+

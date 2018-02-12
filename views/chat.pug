@@ -1,0 +1,30 @@
+extends layout
+block css
+	link(rel='stylesheet', href='/stylesheets/chat.css')
+block script
+	script(type='text/javascript', src='/javascripts/chat.js')
+	script(type='text/javascript', src='https://cdn.socket.io/socket.io-1.4.5.js')
+block content
+	fieldset(id='roommake')
+		|Room name : 
+		input(id='roomname', type='text')
+		br
+		br
+		|Nickname : 
+		input(id='nickname', type='text')
+		br
+		br
+		input(id='room_make' type='button' value='Create')
+	fieldset(id='room')
+		legend Rooms
+		ul(id='roomlist')
+	fieldset(id='chatroom' style="display:none")
+		legend(id='roominfo') Not connected
+		textarea(cols="50", rows="20", readonly="true")
+		br
+		div
+			input(type='text', size='50', id="chatinput", readonly="true")
+			br
+			br
+			input(type='button', id='send', value="send")
+			input(type='button', id='quit', value="quit")

@@ -20,7 +20,6 @@ db.once('open', ()=>{
   model = mongoose.model('schedules', Schema);
 })
 
-/* GET users listing. */
 router.get('/', function(req, res) {
   res.render('calendar', { title: 'Calendar' });
 });
